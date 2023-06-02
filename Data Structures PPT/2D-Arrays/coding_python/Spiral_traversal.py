@@ -27,7 +27,7 @@ def sprial_traversal(matrix:List[List[int]]) -> List:
         
         # right most row top to bottom
         for i in range(top,bottom+1):
-            res.append(matrix[i][bottom])
+            res.append(matrix[i][right])
         right-=1
 
         # bottom row right to left
