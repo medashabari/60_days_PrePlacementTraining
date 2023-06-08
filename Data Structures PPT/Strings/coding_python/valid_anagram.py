@@ -29,7 +29,8 @@ def is_anagram(s,t):
     for i,j in zip(s,t):
         counter[ord(i)-ord('a')]+=1
         counter[ord(j)-ord('a')]-=1
-    if sum(counter)!=0:
-        return False 
+    for count in counter:
+        if count!=0:
+            return False
     return True 
 print(is_anagram('abcd', 'bdca'))
